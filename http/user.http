@@ -1,0 +1,68 @@
+
+@token = eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImZlbGlwZS5nYWJpbGFuQGV4YW1wbGUuY29tIiwiZXhwIjoxNzYwNjE0MjQzfQ.cMt2-rhxfoh5mYr2iNPKPLi-X6qTvs9CmKherGimMk8
+
+### Create User
+POST http://localhost:3000/api/user
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Felipe Gabilan Vasquez",
+  "email": "felipe.gabilan@example.com",
+  "password": "securePassword123",
+  "roles": ["estudiante"],
+  "dateBirth": "1990-01-01"
+}
+
+### Get Users
+
+GET http://localhost:3000/api/user
+Content-Type: application/json
+Accept: application/json
+  
+
+### Get User
+GET http://localhost:3000/api/user/2
+Content-Type: application/json
+Accept: application/json
+
+
+### Update User
+PUT http://localhost:3000/api/user/asdfasdf
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "John Doe Updated",
+  "roles": ["docente"]
+}
+
+
+### Delete User
+DELETE http://localhost:3000/api/user/1
+Content-Type: application/json
+Accept: application/json
+
+
+### Login User
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+Accept: application/json
+
+{
+  "email": "felipe.gabilan@example.com",
+  "password": "securePassword123"
+}
+
+
+### Get Profile
+GET http://localhost:3000/api/auth/profile
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+
+### Provando enpoint
+GET http://localhost:3000/api/user
+Content-Type: application/json
+Accept: application/json
