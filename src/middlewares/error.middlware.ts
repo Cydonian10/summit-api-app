@@ -8,6 +8,7 @@ export const logsErrors = (
   _res: Response,
   next: NextFunction
 ) => {
+  console.log(error);
   logger.error(
     {
       error: error.message,

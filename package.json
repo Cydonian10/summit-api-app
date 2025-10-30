@@ -15,7 +15,7 @@
     "check:untested": "node scripts/check-untested.js",
     "dev": "nodemon",
     "typecheck": "tsc --noEmit",
-    "build": "pnpm run typecheck && swc src -d dist --source-maps",
+    "build": "npm run typecheck && swc src -d dist --source-maps",
     "start": "node dist/src/app.js"
   },
   "keywords": [],

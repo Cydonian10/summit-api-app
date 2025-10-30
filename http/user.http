@@ -2,7 +2,7 @@
 @token = eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImZlbGlwZS5nYWJpbGFuQGV4YW1wbGUuY29tIiwiZXhwIjoxNzYwNjE0MjQzfQ.cMt2-rhxfoh5mYr2iNPKPLi-X6qTvs9CmKherGimMk8
 
 ### Create User
-POST http://localhost:3000/api/user
+POST http://localhost:3000/api/users
 Content-Type: application/json
 Accept: application/json
 
@@ -16,7 +16,7 @@ Accept: application/json
 
 ### Get Users
 
-GET http://localhost:3000/api/user
+GET http://localhost:3000/api/users
 Content-Type: application/json
 Accept: application/json
   
@@ -63,6 +63,6 @@ Authorization: Bearer {{token}}
 
 
 ### Provando enpoint
-GET http://localhost:3000/api/user
+GET http://localhost:3000/api/health
 Content-Type: application/json
 Accept: application/json
